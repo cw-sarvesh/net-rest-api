@@ -13,6 +13,15 @@ jobs:
           keys:
             - dotnet-packages-v1-{{ checksum "net-rest-api.csproj" }}
       - run:
+          name: "Change to react directory"
+          command: cd ClientApp
+      - run:
+          name: "Install npm dependency"
+          command: npm install
+      - run:
+          name: "Change to react directory"
+          command: cd ..
+      - run:
           name: "Install project dependencies"
           command: dotnet.exe restore
       - run:
