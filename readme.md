@@ -13,8 +13,7 @@
 ## Steps to deploy on heroku through CircleCi
 
 - Create New Heroku App
-- Go to setting -> add Buildpack -> Add this url because heroku officially not support .NET -> https://github.com/heroku-softtrends/heroku-buildpack-dotnetcore.git
-- Get API key from Setting to attach Circle CI and save it somewhere, we'll use it later in circleCI 
+- Go to setting -> add Buildpack -> Add this url because heroku officially not support .NET -> https://github.com/jincod/dotnetcore-buildpackttach Circle CI and save it somewhere, we'll use it later in circleCI 
 
 ## Steps to add Circle CI 
 

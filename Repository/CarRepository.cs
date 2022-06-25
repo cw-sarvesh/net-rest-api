@@ -21,6 +21,6 @@ namespace net_rest_api.Repository
         // Return all car models in repository.
         public IEnumerable<CarModel> GetCarModels() => _carModels;
 
-        public CarModel? GetCar(Guid id) => _carModels.Where(carModels => carModels.id == id).SingleOrDefault();
+        public CarModel GetCar(Guid id) => _carModels.Where(carModels => carModels.id == id).SingleOrDefault();
     }
 }
