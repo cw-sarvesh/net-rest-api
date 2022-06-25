@@ -17,7 +17,7 @@ jobs:
           command: dotnet.exe restore
       - run:
           name: "Build Application according to some given configuration"
-          command: dotnet.exe run
+          command: dotnet.exe publish
 workflows:
   heroku_deploy:
     jobs:
